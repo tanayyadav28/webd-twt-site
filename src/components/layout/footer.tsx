@@ -1,45 +1,35 @@
+// File: components/Footer.tsx
+// This component creates a site footer with some placeholder links and text.
+
 import Link from "next/link";
 
 export default function Footer() {
-  const footerLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
-  ];
-
   return (
-    <footer className="w-full bg-gray-900 text-gray-300">
-      <div className="mx-auto max-w-7xl px-4 py-10 md:px-8">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-          {/* Logo / Brand */}
-          <div className="mb-6 md:mb-0">
-            <Link href="/" className="text-2xl font-bold text-white">
-              DigiAgency
-            </Link>
-            <p className="mt-2 text-sm text-gray-400">
-              Building your digital presence with impact.
-            </p>
-          </div>
+    <footer className="bg-gray-100 py-6 mt-10">
+      {/* Container for alignment */}
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+        
+        {/* LEFT SIDE: Copyright */}
+        <p className="text-sm text-gray-600">
+          © {new Date().getFullYear()} The White Tusk. All rights reserved.
+        </p>
 
-          {/* Links */}
-          <nav className="flex flex-wrap gap-4 md:gap-6">
-            {footerLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="hover:text-white transition"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
-
-        {/* Divider */}
-        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} DigiAgency. All rights reserved.
+        {/* RIGHT SIDE: Social / External Links */}
+        <div className="flex space-x-6">
+          <Link href="/privacy" className="text-sm text-gray-600 hover:text-blue-600">
+            Privacy Policy
+          </Link>
+          <Link href="/terms" className="text-sm text-gray-600 hover:text-blue-600">
+            Terms
+          </Link>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-600 hover:text-blue-600"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </footer>
