@@ -3,7 +3,7 @@
 ## Stack
 - NextJS
 - TypeScript
-- Tailwind (Future)
+- Tailwind
 - Supabase (Future)
 
 

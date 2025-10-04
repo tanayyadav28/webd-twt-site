@@ -4,8 +4,8 @@ import Hero from "@/components/layout/hero";
 import "./globals.css";
 
 export const metadata = {
-  title: "DigiAgency",
-  description: "Digital Marketing Agency Landing Page",
+  title: "White Tusk",
+  description: "White Tusk Landing Page",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

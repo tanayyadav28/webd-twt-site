@@ -3,7 +3,7 @@
 
 export default function Hero() {
   return (
-    <section className="bg-black py-20 mb-60">
+    <section className="bg-black py-20 mb-60 mt-16">
       {/* Container to enter and limit width */}
       <div className="max-w-6xl mx-auto px-6 text-center">
         
@@ -20,7 +20,7 @@ export default function Hero() {
         {/* Call-to-Action Button */}
         <a
           href="/contact"
-          className="bg-purple-600 text-white px-6 py-3 rounded-md text-lg hover:bg-blue-700 transition"
+          className="bg-purple-600 text-white px-6 py-3 rounded-md text-lg hover:bg-orange-500 transition"
         >
           Get Started
         </a>
